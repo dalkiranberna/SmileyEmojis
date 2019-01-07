@@ -46,14 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Emoji.cs" />
+    <Compile Include="BusinessLogic\EmojiRepo.cs" />
+    <Compile Include="BusinessLogic\Helper.cs" />
+    <Compile Include="Model\Emoji.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="JSONHelper.cs" />
+    <Compile Include="BusinessLogic\JSONHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

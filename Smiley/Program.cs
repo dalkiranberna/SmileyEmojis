@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Smiley.BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,9 @@ namespace Smiley
 {
     static class Program
     {
+        public static EmojiRepo EmojiRepo = new EmojiRepo();
+        public static Helper Helper = new Helper();
+        public static JSONHelper JsonHelper = new JSONHelper();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

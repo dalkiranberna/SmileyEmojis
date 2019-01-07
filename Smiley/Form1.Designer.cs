@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnl_Emojis = new System.Windows.Forms.Panel();
+            this.flLPanel_emojis = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // pnl_Emojis
+            // flLPanel_emojis
             // 
-            this.pnl_Emojis.Location = new System.Drawing.Point(12, 87);
-            this.pnl_Emojis.Name = "pnl_Emojis";
-            this.pnl_Emojis.Size = new System.Drawing.Size(263, 269);
-            this.pnl_Emojis.TabIndex = 0;
+            this.flLPanel_emojis.AutoScroll = true;
+            this.flLPanel_emojis.Location = new System.Drawing.Point(12, 93);
+            this.flLPanel_emojis.Name = "flLPanel_emojis";
+            this.flLPanel_emojis.Size = new System.Drawing.Size(316, 264);
+            this.flLPanel_emojis.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 368);
-            this.Controls.Add(this.pnl_Emojis);
+            this.ClientSize = new System.Drawing.Size(340, 369);
+            this.Controls.Add(this.flLPanel_emojis);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -53,7 +54,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnl_Emojis;
+        private System.Windows.Forms.FlowLayoutPanel flLPanel_emojis;
     }
 }
 
