@@ -30,5 +30,14 @@ namespace Smiley.BusinessLogic
 
             return lbl;
         }
+
+        public void AddEmojiToCombobox(ComboBox cbox)
+        {
+            List<Emoji.RootObject> categoryList = Program.JsonHelper.GetJson();
+            foreach (Emoji.RootObject item in categoryList)
+            {
+                cbox.Items.Add(item.category);
+            }
+        }
     }
 }

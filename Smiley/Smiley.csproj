@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEmoji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmoji.Designer.cs">
+      <DependentUpon>AddEmoji.cs</DependentUpon>
+    </Compile>
     <Compile Include="BusinessLogic\EmojiRepo.cs" />
     <Compile Include="BusinessLogic\Helper.cs" />
     <Compile Include="Model\Emoji.cs" />
@@ -58,6 +64,9 @@
     <Compile Include="BusinessLogic\JSONHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddEmoji.resx">
+      <DependentUpon>AddEmoji.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -20,8 +20,24 @@ namespace Smiley.BusinessLogic
                 {
                     Button btn = Program.Helper.CreateButtonProperty(items);
                     panel.Controls.Add(btn);
+                    btn.MouseUp += new MouseEventHandler(btn_Emoji_MouseClick);
                 }
             }
+        }
+
+        public void btn_Emoji_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                MessageBox.Show(((Button)sender).Text);
+                Clipboard.SetText(((Button)sender).Text);
+            }
+        }
+
+        public void AddEmoji()
+        {
+            
+            
         }
     }
 }

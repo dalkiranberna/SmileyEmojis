@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace Smiley
 {
-    public partial class Form1 : Form
+    public partial class AddEmoji : Form
     {
-        public Form1()
+        public AddEmoji()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void AddEmoji_Load(object sender, EventArgs e)
         {
-            Program.EmojiRepo.GetEmoji(Program.JsonHelper.GetJson(), flLPanel_emojis);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new AddEmoji().Show();
+            Program.Helper.AddEmojiToCombobox(cbox_Categories);
         }
     }
 }
