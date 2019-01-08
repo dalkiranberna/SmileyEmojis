@@ -16,6 +16,7 @@ namespace Smiley.BusinessLogic
             btn.Height = 70;
             btn.Width = 135;
             btn.BackColor = Color.Khaki;
+            btn.Padding = new Padding(20);
             btn.Text = item.name + "\r\n" + item.art;
 
             return btn;
@@ -24,9 +25,11 @@ namespace Smiley.BusinessLogic
         public Label CreateLabelProperty(Emoji.RootObject rootObject)
         {
             Label lbl = new Label();
-            lbl.Text = rootObject.category;
             lbl.Height = 30;
             lbl.Width = 300;
+            lbl.Font = new Font(FontFamily.GenericMonospace, 20f);
+            lbl.TextAlign = ContentAlignment.MiddleCenter;
+            lbl.Text = rootObject.category;
 
             return lbl;
         }
@@ -35,9 +38,7 @@ namespace Smiley.BusinessLogic
         {
             List<Emoji.RootObject> categoryList = Program.JsonHelper.GetJson();
             foreach (Emoji.RootObject item in categoryList)
-            {
                 cbox.Items.Add(item.category);
-            }
         }
     }
 }

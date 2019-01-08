@@ -21,5 +21,10 @@ namespace Smiley
         {
             Program.Helper.AddEmojiToCombobox(cbox_Categories);
         }
+
+        private void btn_AddEmoji_Click(object sender, EventArgs e)
+        {
+            Program.JsonHelper.SaveToJson(cbox_Categories.SelectedItem.ToString(), tb_Name, tb_Art);
+        }
     }
 }

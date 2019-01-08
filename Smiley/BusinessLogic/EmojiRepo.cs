@@ -34,10 +34,9 @@ namespace Smiley.BusinessLogic
             }
         }
 
-        public void AddEmoji()
+        public void AddEmoji(ComboBox cbox, TextBox tb1, TextBox tb2)
         {
-            
-            
+
         }
     }
 }
